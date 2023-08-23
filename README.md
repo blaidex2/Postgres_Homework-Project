@@ -63,14 +63,23 @@
 >sudo rsync -av /var/lib/postgresql /zfs
 >
 
-По умолчанию значение для data_directory выставлено на /var/lib/postgresql/15/main в файле /etc/postgresql/15/main/postgresql.conf. Его нужно отредактировать, чтобы указать новый каталог:
-sudo nano /etc/postgresql/15/main/postgresql.conf
+По умолчанию значение для data_directory выставлено на /var/lib/postgresql/15/main в файле /etc/postgresql/15/main/postgresql.conf. 
+Его нужно отредактировать, чтобы указать новый каталог:
+
+>sudo nano /etc/postgresql/15/main/postgresql.conf
+>
+
 Теперь в строке, начинающейся с data_directory нужно изменить путь, чтобы указать новое местоположение. Обновлённая директива будет выглядеть примерно так:
 /etc/postgresql/15/main/postgresql.conf
+
 . . .
+
 data_directory = '/xfs/postgresql/15/main'
+
 . . .
+
 data_directory = '/zfs/postgresql/15/main'
+
 Включаем
 >sudo systemctl start postgresql
 >
