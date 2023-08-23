@@ -122,16 +122,19 @@ data_directory = '/zfs/postgresql/15/main'
 
 Проведем тестирование, аналогично эксперименту №1.
 EXT4
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/986657ee-45e2-4a4a-b5df-1116b9ec3262)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/4363a049-148e-4cfc-9e01-333acfdfb78c)
 
 XFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/431b6fee-6252-4ba6-8244-de6f735ab3a4)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/509c452d-860b-458e-9262-def3953ba508)
 
 ZFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/d4c7cc69-c09c-40c2-83ec-5f78dd0c338f)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/428ffbf0-b410-461c-9dfc-6160aa31ae05)
@@ -150,16 +153,19 @@ XFS почти не почувствовала изменения.
 Со значением off большие страницы не будут запрашиваться.
 
 EXT4
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/8cb91249-4af7-485f-8b01-57af9d9ae11b)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/93b2f072-d493-4087-96a4-d623ca4e9332)
 
 XFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/a95bd8b2-b5ce-4543-9f74-f8d1efe1e9d4)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/0f371f01-376e-433d-92c8-213ad81f1826)
 
 ZFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/25d45600-d404-469e-a316-3769717450aa)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/0782c400-2051-446d-b7ff-68132765e026)
@@ -178,16 +184,19 @@ ZFS
 Значение PostgreSQL по умолчанию 4 для random_page_cost которое настроено для HDD. Мы используем SSD, потому поменяем его и проверим
 
 EXT4
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/c88bf180-2708-4235-ba4b-665ab25d5096)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/41288502-51ae-480c-8069-8b12a44919fb)
 
 XFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/3d16d984-f5c3-4d67-9d11-dcc26cbfcc7a)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/fd1942d8-1fd0-4247-bbf0-a471ce1b2395)
 
 ZFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/d4dd95c1-3da5-4701-adad-55b6cf790f79)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/4e9873f9-d934-4b25-a6ad-a612a9d9698e)
@@ -203,15 +212,18 @@ ZFS по-прежнему ухудшает показатели к увелич�
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/b5f8318b-2522-4693-b592-24129144ff58)
 
 EXT4
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/f6e3bd08-1df9-4850-8ce4-02077037d418)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/ee99b30c-6593-4ef1-801c-b3918a10d68f)
 
 
 XFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/725b02dc-86b4-4612-8c43-f8e928d41657)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/1ec7177c-5781-4410-944e-bb3b3fcac26a)
 
 ZFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/defd1bf0-16a2-4c88-84c4-61fc1c5d6325)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/6daa67e3-fe3e-49e8-bae3-1fb44bbc06e5)
 
@@ -228,14 +240,17 @@ ZFS
 Теперь отключим параметр synchronous_commit, чтобы сервер не сообщал об успешном выполнении операции
 
 EXT4
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/5ee7fc8e-47e9-4857-a5df-d6c2beab9860)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/c5e5bd67-96ed-4d08-b3c1-16b9ffdde631)
 
 XFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/c9a4c579-705a-400f-ad03-3b962e996d83)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/ed1a8749-41aa-4285-9f29-ad157c6b01d5)
 
 ZFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/629158df-82fe-4b41-9580-ae8faacffda7)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/cb695129-def5-4b8a-8364-9f76ebfb73ae)
 
@@ -255,15 +270,18 @@ ZFS
 отключать его следует только при тех же обстоятельствах, которые перечислялись в рекомендациях для вышеописанного параметра.
 
 EXT4
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/3c3722c2-6999-4b4a-b2cf-dc83af7ac310)
 
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/a202fc65-2c91-470c-aad6-bc2bb433a0e1)
 
 XFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/b3ac9bbe-07ac-4eb0-8bb3-f3bffa7c112a)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/decbd7ca-c8fb-47d7-aa79-c0205ca9b635)
 
 ZFS
+
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/49e2cbdf-4d4c-45d5-98df-1fdde4fcffaf)
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/f2814dfe-1cca-41b5-88e4-28808bc6fd8d)
 
@@ -274,3 +292,11 @@ ZFS
 ![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/eb59ae2d-b9f6-429f-a4f6-603e3b380db0)
 
 Здесь XFS показала себя лучше, чем остальные на обоих объемах данных.
+
+## Выводы
+Рассмотрев поведение файловых систем при разных конфигурациях и объемах данных на основе нашего проекта сложно наверняка определить лучшую файловую систему для Postresql.
+Можем сказать, что явный аутсайдер здесь файловая система ZFS  в плане производительности. При увеличении объема данных в 10 раз, она в 2-2.5 раза теряет свою производительность, что может критично сказаться
+на онлайновых БД с большими объемами данных. Но зато более надежно распределяет данные и лучше всего подходит для восстановления после сбоя диска.
+На основе данных, полученных на экспериментах, можно сказать, что система EXT4 больше подойдет для малых объемов данных, имея большую производительность среди конкурентов. 
+Преимущество Ext4 перед другими системами заключается в его превосходной способности чтения и времени загрузки по сравнению с другими системами. Однако он не имеет расширенных функций, таких как прозрачное сжатие, и относительно медленнее записывает файлы.
+Для достаточно грузных БД оптимальнее использовать XFS. Так как, когда дело доходит до файлов меньшего размера, XFS — не лучший вариант. Тем не менее, XFS компенсирует свои недостатки, обеспечивая лучшую поддержку для файлов большего размера по сравнению с конкурентами. XFS также поддерживает функции для твердотельных накопителей.
