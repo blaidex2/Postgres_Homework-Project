@@ -304,7 +304,8 @@ ZFS
 
 Итого общая таблица выглядит так:
 
-![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/c70ff7a4-2a64-406a-91e0-b933b57cd8f5)
+![image](https://github.com/blaidex2/Postgres_Homework-Project/assets/130083589/24286b68-618b-4408-b706-e56e84f5f78b)
+
 
 
 
